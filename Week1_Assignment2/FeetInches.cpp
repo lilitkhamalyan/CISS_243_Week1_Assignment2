@@ -175,6 +175,21 @@ bool FeetInches::operator >= (const FeetInches &right)
 	return status;
 }
 
+//*************************************************************
+// Overloaded != operator. Returns true if the current object *
+// is set to a value not equal to that of right.                  *
+//*************************************************************
+
+bool FeetInches::operator!= (const FeetInches &right)
+{
+	bool status;
+	if (feet != right.feet && inches != right.inches)
+		status = true;
+	else
+		status = false;
+	return status;
+}
+
 //********************************************************
 // Overloaded << operator. Gives cout the ability to     *
 // directly display FeetInches objects.                  *
