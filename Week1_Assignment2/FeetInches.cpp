@@ -245,6 +245,12 @@ FeetInches:: operator int()
 	return feet;
 }
 
-
-
+// Description of multiply function. 
+int FeetInches::multiply(const FeetInches &obj)
+{
+	FeetInches temp = *this;
+	temp.feet = obj.feet * temp.feet;
+	temp.inches = obj.inches * temp.inches;
+	return temp;
+}
 

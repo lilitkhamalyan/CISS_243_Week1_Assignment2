@@ -116,10 +116,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="FeetInches.h" />
+    <ClInclude Include="RoomCarpet.h" />
+    <ClInclude Include="RoomDimension.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FeetInches.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="RoomCarpet.cpp" />
+    <ClCompile Include="RoomDimension.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

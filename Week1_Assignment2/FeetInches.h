@@ -28,6 +28,12 @@ public:
 		inches = i;
 		simplify();
 	}
+	// Copy constructor
+	FeetInches(const FeetInches &obj)
+	{
+		feet = obj.feet;
+		inches = obj.inches;
+	}
 
 	// Mutator functions
 	void setFeet(int f)
@@ -66,6 +72,8 @@ public:
 	// Conversion functions
 	operator double();
 	operator int();
+	//multiply function;
+	int multiply(const FeetInches &);
 
 	// Friends
 	friend ostream &operator << (ostream &, const FeetInches &);
